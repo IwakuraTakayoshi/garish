@@ -126,9 +126,12 @@ if(!$service) {
             <textarea name="Message" class="form-control" rows="4" placeholder="Additional details..." required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-gold w-100">Submit Inquiry</button>
+        <button type="submit" class="btn btn-gold w-100 mb-3">Submit Inquiry</button>
         </form>
 
+        <a href="rooms.php" class="btn btn-outline-primary w-100">
+          Back to Services
+        </a>
 
     </div>
 

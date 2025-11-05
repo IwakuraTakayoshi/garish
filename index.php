@@ -105,7 +105,7 @@
     <div class="container text-center">
       <h2 class="section-title">Conference & Events</h2>
       <p class="lead">Host your meetings, conferences, and banquets in our well-equipped halls.</p>
-      <img src="assets/images/con.jpg" class="img-fluid rounded shadow mt-3" alt="Conference Hall">
+      <img src="assets/images/conference.jpg" class="img-fluid rounded shadow mt-3" alt="Conference Hall">
     </div>
   </section>
 
