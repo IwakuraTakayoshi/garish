@@ -46,12 +46,12 @@ $rooms = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     <div class="container mt-3">
         <form method="GET" class="mb-4">
-            <select name="status" class="form-select w-auto d-inline">
-                <option value="">-- Filter by Availability --</option>
+            <select name="status" class="form-select w-50 d-inline">
+                <option value="">Filter by Availability</option>
                 <option value="1" <?= (isset($_GET['status']) && $_GET['status'] == 1) ? 'selected' : '' ?>>Available</option>
                 <option value="0" <?= (isset($_GET['status']) && $_GET['status'] == 0) ? 'selected' : '' ?>>Booked</option>
             </select>
-            <button class="btn btn-sm btn-primary">Apply</button>
+            <button class="btn btn-sm btn-primary w-25 ms-3">Apply</button>
         </form>
 
         <?php if(empty($rooms)): ?>

@@ -23,7 +23,7 @@
     .hero {
       background: url('assets/images/bg_pic.jpg') center center/cover no-repeat;
       color: white;
-      height: 80vh;
+      height: 60vh;
       width: 100%;
       display: flex;
       align-items: center;
@@ -36,13 +36,13 @@
     /* Dark overlay to improve text visibility */
     .hero-overlay {
       background: rgba(0, 0, 0, 0.5);
-      padding: 30px;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 40px;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .footer {

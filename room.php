@@ -65,6 +65,42 @@ if (!$room) {
 
             <p><?= $room['room_description'] ?></p>
 
+            <?php
+                $category = strtolower($room['category']);
+                $amenities = [];
+
+                if (strpos($category, 'classic') !== false) {
+                    $amenities = [
+                        "Air Conditioning", "Flat-screen TV",
+                        "Complimentary water", "Comfortable bedding"
+                    ];
+                } elseif (strpos($category, 'supreme') !== false) {
+                    $amenities = [
+                        "Air Conditioning", "Flat-screen TV",
+                        "Mini-fridge", "Complimentary breakfast", 
+                        "Workspace desk & lamp", "Coffee & tea maker", 
+                        "Premium toiletries"
+                    ];
+                } elseif (strpos($category, 'grand') !== false) {
+                    $amenities = [
+                        "Air Conditioning", "Free Wi-Fi", "Mini-fridge",
+                        "Complimentary breakfast", "Workspace desk & lamp",
+                        "Coffee & tea maker", "Premium toiletries",
+                        "24/7 room service", "Private lounge area",
+                        "Smart TV with streaming", "Complimentary minibar snacks",
+                        "Jacuzzi or luxury bathtub", "Late checkout"
+                    ];
+                }
+            ?>
+
+
+            <h4 class="mt-4">Amenities</h4>
+            <ul>
+            <?php foreach($amenities as $a): ?>
+                <li><?= $a ?></li>
+            <?php endforeach; ?>
+            </ul>
+
             <!-- Buttons -->
             <?php if ($room['instock'] == 1): ?>
                 <a href="booking.php?room=<?= $room['id'] ?>" class="btn btn-warning text-dark w-100 mb-2 fw-bold">

@@ -79,11 +79,11 @@ body{
         <h3 class="mb-3">Add New Room</h3>
 
         <?php if(isset($success)): ?>
-            <div class="alert alert-success"><?= $success ?></div>
+            <div class="alert alert-success"><?php echo $success ?></div>
         <?php endif; ?>
 
         <?php if(isset($error)): ?>
-            <div class="alert alert-danger"><?= $error ?></div>
+            <div class="alert alert-danger"><?php echo $error ?></div>
         <?php endif; ?>
 
         <form method="POST" enctype="multipart/form-data">
