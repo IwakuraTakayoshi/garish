@@ -95,7 +95,7 @@ body{
 
             <div class="mb-3">
                 <label class="form-label">Category</label>
-                <input type="text" name="category" class="form-control" required>
+                 <input type="text" name="category" class="form-control" required>
             </div>
 
             <div class="mb-3">
