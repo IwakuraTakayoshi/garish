@@ -129,7 +129,7 @@ if(!$service) {
         <button type="submit" class="btn btn-gold w-100 mb-3">Submit Inquiry</button>
         </form>
 
-        <a href="rooms.php" class="btn btn-outline-primary w-100">
+        <a href="services.php" class="btn btn-outline-primary w-100">
           Back to Services
         </a>
 
